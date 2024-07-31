@@ -1,0 +1,57 @@
+/* src/components/HeaderComponent.css */
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: #2c2c2c; /* Dark background color */
+    background-image: radial-gradient(circle, #3a3a3a 1px, transparent 1px);
+    background-size: 10px 10px; /* Pattern size */
+    overflow: hidden;
+    color: #fff; /* Default text color */
+  }
+  
+  
+  
+  
+  
+  
+  
+  .ticker-container {
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  .ticker {
+    display: inline-block;
+    animation: ticker-animation 40s linear infinite;
+  }
+  
+  .ticker-item {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
+  .ticker-item span {
+    display: inline-block;
+  }
+  
+  .ticker-item .name {
+    color: #ff9900; /* Default name color */
+  }
+  
+  .ticker-item .price {
+    color: #00cc66; /* Default price color */
+  }
+  
+  @keyframes ticker-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
