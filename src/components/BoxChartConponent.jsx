@@ -21,12 +21,12 @@ const BoxChartComponent = () => {
     };
 
     const buttonClass = (buttonName) =>
-        `px-4 py-2 rounded-md text-sm cursor-pointer ${
-            activeButton === buttonName ? 'bg-yellow-600 text-white' : 'text-gray-800'
+        `px-4 py-2 rounded-md text-sm text-text2 cursor-pointer ${
+            activeButton === buttonName ? 'bg-yellow-600 text-text2' : 'text-text2'
         }`;
 
     return (
-        <div className="bg-[#004d00] ">
+        <div className="bg-sectionBack2 ">
             <div className="SectionTwoHome w-full lg:w-[85%] min-h-[400px] mx-auto pb-[80px]">
                 <div className="flex flex-col md:flex-row justify-between items-center pt-6">
                     <div className="BtnSectionTwoRight flex gap-2 h-16 items-center justify-center md:justify-start p-2 w-full lg:w-2/3">
@@ -76,11 +76,11 @@ const BoxChartComponent = () => {
                         </span>
                     </div>
                 </div>
-                <div className="bg-[#004d00]">
+                <div>
                     <div className="w-full min-h-[600px] mx-auto pb-[80px]">
                         <div className="overflow-x-auto"> {/* اضافه کردن اسکرول افقی */}
-                            <table className="w-full table-auto rounded-xl mt-10">
-                                <thead className="bg-accent2 py-8">
+                            <table className="w-full bg-[#004d00] table-auto rounded-xl mt-10">
+                                <thead className="bg-smallBox1 text-content2 py-8">
                                     <tr>
                                         <th className="py-8 rounded-tr-lg text-center">نام ارز</th>
                                         <th className="p-4 text-center">نمودار</th>
@@ -118,7 +118,7 @@ const BoxChartComponent = () => {
                         <div className="flex justify-center mt-4">
                             <button
                                 onClick={handleShowMoreClick}
-                                className="border-2 rounded-xl px-4 py-2 text-sm text-content2 hover:bg-[#FFA115] hover:text-white"
+                                className="border-2 bg-header2 rounded-xl px-8 py-3 text-sm text-content2 hover:bg-green-800 hover:text-white"
                             >
                                 {isShowingMore ? 'بستن' : 'نمایش بیشتر'}
                             </button>

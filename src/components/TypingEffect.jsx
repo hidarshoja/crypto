@@ -43,7 +43,7 @@ const TypingEffect = () => {
   }, [charIndex, deleting, messageIndex]);
 
   return (
-    <p className="flex flex-col items-center justify-center gap-2 font-semibold text-[#ffd700] space-y-2">
+    <p className="flex flex-col items-center justify-center gap-2 font-semibold text-text2 space-y-2">
       <span className="text-3xl">{displayedText}</span>
     </p>
   );

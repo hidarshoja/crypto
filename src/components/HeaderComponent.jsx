@@ -35,7 +35,7 @@ const HeaderComponent = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <div>
-    <div className="header-container">
+    <div className="header-container fixed top-0 z-50">
       <div className="ticker-container">
         <div className="ticker">
           {cryptoPrices.map((crypto, index) => (
@@ -51,20 +51,20 @@ const HeaderComponent = () => {
         </div>
       </div>
     </div>
-    <header className="bg-[#004d00]">
+    <header className="bg-body1 z-50 border-b border-smallBox2 mt-12 fixed w-full">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex gap-1 lg:flex-1">
-        <a href="#" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-[#ffd700]">
+        <a href="#" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-text2">
            ورود
           </a>
-          <a href="#" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-[#ffd700]">
+          <a href="#" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-text2">
            ثبت نام
           </a>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#ffd700]"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-text2"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -73,8 +73,8 @@ const HeaderComponent = () => {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-[#ffd700]">
-              <ChevronDownIcon className="h-5 w-5 flex-none text-[#ffd700]" aria-hidden="true" />
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-text2">
+              <ChevronDownIcon className="h-5 w-5 flex-none text-text2" aria-hidden="true" />
               ارزها
             </Popover.Button>
 
@@ -87,7 +87,7 @@ const HeaderComponent = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-[#185d18] shadow-lg ring-1 ring-[#ffd700]/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-[#185d18] shadow-lg ring-1 ring-text2/5">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
@@ -95,10 +95,10 @@ const HeaderComponent = () => {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-[#ffd700] group-hover:text-indigo-600" aria-hidden="true" />
+                        <item.icon className="h-6 w-6 text-text2 group-hover:text-indigo-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-[#ffd700]">
+                        <a href={item.href} className="block font-semibold text-text2">
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -107,14 +107,14 @@ const HeaderComponent = () => {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-[#ffd700]/5 bg-green-950">
+                <div className="grid grid-cols-2 divide-x divide-text2/5 bg-green-950">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-[#ffd700] hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-text2 hover:bg-gray-100"
                     >
-                      <item.icon className="h-5 w-5 flex-none text-[#ffd700]" aria-hidden="true" />
+                      <item.icon className="h-5 w-5 flex-none text-text2" aria-hidden="true" />
                       {item.name}
                     </a>
                   ))}
@@ -123,24 +123,24 @@ const HeaderComponent = () => {
             </Transition>
           </Popover>
          
-          <a href="#" className="text-sm font-semibold leading-6 text-[#ffd700]">
+          <a href="#" className="text-sm font-semibold leading-6 text-text2">
             ارتباط با ما
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-[#ffd700]">
+          <a href="#" className="text-sm font-semibold leading-6 text-text2">
             وبلاگ
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-[#ffd700]">
+          <a href="#" className="text-sm font-semibold leading-6 text-text2">
             بازار
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-[#ffd700]">
+          <a href="#" className="text-sm font-semibold leading-6 text-text2">
             کیف پول
           </a>
          
           
-          <a href="#" className="text-sm font-semibold leading-6 text-[#ffd700]">
+          <a href="#" className="text-sm font-semibold leading-6 text-text2">
             تبدیل
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-[#ffd700]">
+          <a href="#" className="text-sm font-semibold leading-6 text-text2">
             صفحه اصلی
           </a>
         </Popover.Group>
@@ -153,18 +153,18 @@ const HeaderComponent = () => {
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 top-16 z-10 w-full overflow-y-auto bg-[#004d00] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-[#ffd700]/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 top-16 z-10 w-full overflow-y-auto bg-[#004d00] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-text2/10">
           <div className="flex items-center flex-row-reverse justify-between">
           <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-[#ffd700] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-text2 hover:bg-gray-50"
                 >
                   ورود
                 </a>
                
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-[#ffd700]"
+              className="-m-2.5 rounded-md p-2.5 text-text2"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -177,7 +177,7 @@ const HeaderComponent = () => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full flex-row-reverse items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-[#ffd700] hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full flex-row-reverse items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-text2 hover:bg-gray-50">
                         ارزها
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -190,7 +190,7 @@ const HeaderComponent = () => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-[#ffd700] hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-text2 hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -202,37 +202,37 @@ const HeaderComponent = () => {
                 <div className='flex flex-col items-end justify-start'>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#ffd700] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-text2 hover:bg-gray-50"
                 >
                   صفحه اصلی
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#ffd700] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-text2 hover:bg-gray-50"
                 >
                   کیف پول
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#ffd700] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-text2 hover:bg-gray-50"
                 >
                   بازار
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#ffd700] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-text2 hover:bg-gray-50"
                 >
                   تبدیل
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#ffd700] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-text2 hover:bg-gray-50"
                 >
                   وبلاگ
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#ffd700] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-text2 hover:bg-gray-50"
                 >
                   ارتباط با ما
                 </a>

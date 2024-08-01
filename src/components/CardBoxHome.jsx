@@ -51,13 +51,13 @@ export default function CardBoxHome() {
   }, []);
 
   return (
-    <div className='bg-[#004d00]'>
+    <div className='bg-sectionBack2'>
     <div className=' text-white p-4 w-full lg:w-[85%] mx-auto'>
       <div className='flex flex-wrap justify-center md:justify-between gap-4'>
         {prices.map((item, index) => (
-          <div key={index} className='flex justify-between items-center bg-gray-200 p-4 rounded-lg w-64 h-16 min-w-[200px]'>
+          <div key={index} className='flex justify-between items-center bg-smallBox1 p-4 rounded-lg w-64 h-16 min-w-[200px]'>
             <div className='flex items-center mb-2'>
-              <span className='mr-2 text-lg font-semibold text-[#004d00]'>{item.name}</span>
+              <span className='mr-2 text-lg font-semibold text-content2'>{item.name}</span>
               {item.direction === 'up' ? (
                 <FaArrowUp className='text-green-500' />
               ) : (

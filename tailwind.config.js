@@ -10,13 +10,16 @@ module.exports = {
         header2: '#004d00',
         content2: '#ffffff',
         footer2: '#004d00',
-        text2: '#ffd700',
-        smallBox1: '#1c1c1c', // خاکستری تیره
-        smallBox2: '#2e2e2e', // خاکستری تیره‌تر
-        sectionBack1: '#f5f5f5', // خاکستری روشن
-        sectionBack2: '#e0e0e0', // خاکستری ملایم
-        accent1: '#b0b0b0', // خاکستری مایل به سفید (برای استفاده در باکس‌های کوچک یا سکشن‌های ثانویه)
-        accent2: '#d1d1d1', // خاکستری ملایم‌تر (برای پس‌زمینه‌های خاص یا عناصر اضافی)
+        text2: '#ffb700',
+        smallBox1: '#1c1c1c', 
+        smallBox2: '#2e2e2e', 
+        sectionBack1: '#f5f5f5', 
+        sectionBack2: '#e0e0e0',
+        accent1: '#b0b0b0', 
+        accent2: '#d1d1d1',
+        body1 : '#17202a',
+        green1 :'#00b196',
+        yellow1:'#ffb115'
       },
     },
   },

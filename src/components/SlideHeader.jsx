@@ -3,7 +3,7 @@ import TypingEffect from './TypingEffect'
 
 export default function SlideHeader() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center w-full bg-gradient-to-r from-[#17a417] via-[#007300] to-[#088208] p-8">
+    <div className="flex flex-col lg:flex-row pt-48 items-center justify-center w-full bg-sectionBack1 p-8">
     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mb-4 lg:mb-0">
       <img
         src="/img/crypto1.svg"
@@ -13,7 +13,7 @@ export default function SlideHeader() {
     </div>
     <div className="w-full lg:w-1/2 text-center lg:text-left">
       <p className=" flex flex-col h-36 lg:h-24  items-center gap-2 font-semibold text-text2 space-y-2">
-        <span className="text-xl">
+        <span className="text-xl text-text2">
           بازار معاملات B2B را با ما تجربه کنید{" "}
         </span>
         <TypingEffect />
