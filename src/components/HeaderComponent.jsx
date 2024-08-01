@@ -52,7 +52,7 @@ const HeaderComponent = () => {
       </div>
     </div>
     <header className="bg-body1 z-50 border-b border-smallBox2 mt-12 fixed w-full">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between py-6 px-2" aria-label="Global">
         <div className="flex gap-1 lg:flex-1">
         <a href="#" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-text2">
            ورود

@@ -55,7 +55,7 @@ export default function CardBoxHome() {
     <div className=' text-white p-4 w-full lg:w-[85%] mx-auto'>
       <div className='flex flex-wrap justify-center md:justify-between gap-4'>
         {prices.map((item, index) => (
-          <div key={index} className='flex justify-between items-center bg-smallBox1 p-4 rounded-lg w-64 h-16 min-w-[200px]'>
+          <div key={index} className='flex justify-between items-center bg-smallBox1 p-4 rounded-lg w-full md:w-64 h-16 min-w-[200px]'>
             <div className='flex items-center mb-2'>
               <span className='mr-2 text-lg font-semibold text-content2'>{item.name}</span>
               {item.direction === 'up' ? (
@@ -75,7 +75,7 @@ export default function CardBoxHome() {
         {boxData.map((box, index) => (
           <div
             key={index}
-            className={`flex cursor-pointer flex-col items-center justify-center w-60 h-40 p-4 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 ${box.bgColor} hover:${box.hoverColor}`}
+            className={`flex cursor-pointer flex-col items-center justify-center w-full md:w-60 h-40 p-4 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 ${box.bgColor} hover:${box.hoverColor}`}
           >
             <box.icon className='text-4xl mb-2 text-white' />
             <span className='text-white text-center font-semibold'>{box.name}</span>

@@ -7,12 +7,20 @@ import {
   FaUserAlt,
   FaProductHunt,
   FaHeadset,
+  FaArrowUp
 } from "react-icons/fa";
 
+
 export default function FooterComponent() {
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div dir="rtl">
-      <div className="footerBoxComponents py-8 flex gap-3 items-center justify-start space-x-3 lg:space-x-6 pr-3 lg:pr-12">
+      <div className="footerBoxComponents w-full flex flex-col md:flex-row items-center justify-between">
+      <div className=" py-8 flex gap-3 items-center justify-start space-x-3 lg:space-x-6 pr-3 lg:pr-12">
         <input
           type="text"
           className="py-2 px-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -21,6 +29,17 @@ export default function FooterComponent() {
         <button className="py-2 px-6 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
           ارسال
         </button>
+      </div>
+        <div className="pl-3 lg:pl-12 flex items-center gap-4">
+          <span className="text-text2 md:hidden">رفتن به ابتدای صفحه </span>
+          <button
+          onClick={scrollToTop} 
+          className="cursor-pointer p-2 border-2 border-text2 rounded-full hover:bg-yellow-100"
+          >
+
+        <FaArrowUp size={24} className="text-text2" />
+          </button>
+      </div>
       </div>
 
       <div
