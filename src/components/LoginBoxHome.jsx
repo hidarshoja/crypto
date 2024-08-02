@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 export default function LoginBoxHome() {
   return (
@@ -11,16 +11,17 @@ export default function LoginBoxHome() {
       </p>
     </div>
     <div className="flex items-center justify-center gap-4 lg:gap-6">
-      <a href="/login">
+      <Link to={"/login"}>
       <button className="bg-green-600 w-[112px] text-content2 py-2 px-6 rounded-lg shadow-md hover:bg-green-700">
         ورود
       </button>
-      </a>
-      <a href="/register">
+      </Link>
+      <Link to={"/register"}>
       <button className="bg-blue-600 w-[112px] text-content2 py-2 px-6 rounded-lg shadow-md hover:bg-blue-700">
         ثبت نام
       </button>
-      </a>
+      </Link>
+      
     </div>
   </div>
 </div>
