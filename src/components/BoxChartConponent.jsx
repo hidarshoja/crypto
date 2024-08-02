@@ -77,7 +77,7 @@ const BoxChartComponent = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="w-full min-h-[600px] mx-auto pb-[80px]">
+                    <div className="w-full px-2 min-h-[600px] mx-auto pb-[80px]">
                         <div className="overflow-x-auto"> {/* اضافه کردن اسکرول افقی */}
                             <table className="w-full bg-[#004d00] table-auto rounded-xl mt-10">
                                 <thead className="bg-smallBox1 text-content2 py-8">

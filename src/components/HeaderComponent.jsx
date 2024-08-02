@@ -54,10 +54,10 @@ const HeaderComponent = () => {
     <header className="bg-body1 z-50 border-b border-smallBox2 mt-12 fixed w-full">
       <nav className="mx-auto flex max-w-7xl items-center justify-between py-6 px-2" aria-label="Global">
         <div className="flex gap-1 lg:flex-1">
-        <a href="#" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-text2">
+        <a href="/login" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-text2">
            ورود
           </a>
-          <a href="#" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-text2">
+          <a href="/register" className="text-sm border px-3 py-1 rounded-md flex items-center justify-center hover:bg-green-500 font-semibold leading-6 text-text2">
            ثبت نام
           </a>
         </div>
@@ -153,10 +153,10 @@ const HeaderComponent = () => {
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 top-16 z-10 w-full overflow-y-auto bg-[#004d00] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-text2/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 top-[130px] z-10 w-full overflow-y-auto bg-smallBox2 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-text2/10">
           <div className="flex items-center flex-row-reverse justify-between">
           <a
-                  href="#"
+                  href="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-text2 hover:bg-gray-50"
                 >
                   ورود

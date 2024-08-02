@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaInstagram,
   FaTelegram,
@@ -20,17 +20,17 @@ export default function FooterComponent() {
   return (
     <div dir="rtl">
       <div className="footerBoxComponents w-full flex flex-col md:flex-row items-center justify-between">
-      <div className=" py-8 flex gap-3 items-center justify-start space-x-3 lg:space-x-6 pr-3 lg:pr-12">
+      <div className="w-full py-8 flex flex-col md:flex-row gap-3 items-center justify-start  px-3  lg:pr-12">
         <input
           type="text"
-          className="py-2 px-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full md:w-auto py-2 px-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="با ما در ارتباط باشید "
         />
-        <button className="py-2 px-6 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button className="w-full md:w-auto py-2 px-6 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
           ارسال
         </button>
       </div>
-        <div className="pl-3 lg:pl-12 flex items-center gap-4">
+        <div className="px-3 lg:pl-12 flex items-center justify-between md:justify-end w-full gap-4 py-2">
           <span className="text-text2 md:hidden">رفتن به ابتدای صفحه </span>
           <button
           onClick={scrollToTop} 
@@ -43,12 +43,12 @@ export default function FooterComponent() {
       </div>
 
       <div
-        className="footerBoxComponents flex  flex-col items-center justify-center lg:flex-row  py-8"
+        className="footerBoxComponents flex  flex-col items-start justify-center lg:flex-row  py-8"
         dir="rtl"
       >
         <div className="w-full lg:w-1/4 px-4 mb-4 lg:mb-0">
           <h3 className="text-xl text-text2 font-bold mb-2">
-            پلتفرم های مبادله ارزهای دیجیتال
+            مبادله ارزهای دیجیتال
           </h3>
           <ul className="footerUl">
             <li>
@@ -141,3 +141,8 @@ export default function FooterComponent() {
     </div>
   );
 }
+
+
+
+
+

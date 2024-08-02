@@ -5,6 +5,8 @@ import Register from './pages/Register';
 import AboutUs from './pages/AboutUs';
 import AuthLayout from './Layouts/AuthLayout';
 import MainLayout from './Layouts/MainLayout';
+import Otp from "./pages/Otp";
+import ForgotPassword from './pages/ForgotPassword';
 
 const AppRoutes = () => {
   return (
@@ -27,7 +29,22 @@ const AppRoutes = () => {
             </AuthLayout>
           } 
         />
-        
+          <Route 
+          path="/otp" 
+          element={
+            <AuthLayout>
+              <Otp />
+            </AuthLayout>
+          } 
+        />
+         <Route 
+          path="/forgot" 
+          element={
+            <AuthLayout>
+              <ForgotPassword />
+            </AuthLayout>
+          } 
+        />
         {/* مسیرهای با MainLayout */}
         <Route 
           path="/" 
